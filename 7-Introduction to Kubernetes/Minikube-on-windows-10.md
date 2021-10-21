@@ -23,9 +23,9 @@ systeminfo
 ```
 
 ## Minikube releases
-```
-https://github.com/kubernetes/minikube/releases
-```
+ - https://github.com/kubernetes/minikube/releases
+ - https://github.com/kubernetes/minikube/releases/download/v1.23.2/minikube-windows-amd64.exe
+
 
 ## Install Minikube
 ```
@@ -37,6 +37,9 @@ choco install minikube -y
 choco install kubernetes-cli
 ```
 
+- Direct Download URL and paste in c:\\windows
+   - https://dl.k8s.io/release/v1.22.0/bin/windows/amd64/kubectl.exe
+
 ## Setup K8S Cluster using minikube
 ```
 minikube start --v=7
@@ -44,7 +47,6 @@ minikube start --v=7
 
 ## Error:
 - Just in case, if you made some mistake while running this command, or want to start afresh, you can do delete the .minikube and .kube folders from %USERPROFILE% folder. Additionally, open Hyper-V Manager and delete the minkube VM. Thereafter, open the command prompt as Administrator and issue this command once more “minikube start –driver=hyperv“
-
 
 ## minikube ip
 ```
